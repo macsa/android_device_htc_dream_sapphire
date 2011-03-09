@@ -16,7 +16,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/small_base.mk)
 
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+$(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/dream_sapphire/overlay
 
@@ -139,3 +139,17 @@ PRODUCT_NAME := full_dream_sapphire
 PRODUCT_DEVICE := dream_sapphire
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Full Android on Dream/Sapphire
+
+PRODUCT_LOCALES := \
+    es_ES \
+    ca_ES \
+    en_US \
+    de_DE \
+    eu_ES \
+    fr_FR \
+    it_IT \
+    pt_PT \
+    ru_RU \
+    mdpi
+
+PRODUCT_DEFAULT_LANGUAGE := es_ES
